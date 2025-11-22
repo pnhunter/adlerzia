@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>WildGuard - 保护野生动物</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,11 +14,11 @@
         }
 
         :root {
-            --primary: #2e7d32;
-            --secondary: #4caf50;
-            --accent: #8bc34a;
-            --light: #e8f5e9;
-            --dark: #1b5e20;
+            --primary: #2c5530;
+            --secondary: #4a7c59;
+            --accent: #8fb996;
+            --light: #f0f7f4;
+            --dark: #1a3c27;
             --text: #333333;
             --white: #ffffff;
         }
@@ -101,7 +101,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2059&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -252,17 +252,17 @@
             color: var(--text);
         }
 
-        .initiatives {
+        .species {
             background-color: var(--white);
         }
 
-        .initiatives-grid {
+        .species-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        .initiative-card {
+        .species-card {
             background-color: var(--light);
             border-radius: 10px;
             overflow: hidden;
@@ -270,37 +270,37 @@
             transition: transform 0.3s ease;
         }
 
-        .initiative-card:hover {
+        .species-card:hover {
             transform: translateY(-10px);
         }
 
-        .initiative-img {
+        .species-img {
             height: 200px;
             overflow: hidden;
         }
 
-        .initiative-img img {
+        .species-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .initiative-card:hover .initiative-img img {
+        .species-card:hover .species-img img {
             transform: scale(1.1);
         }
 
-        .initiative-content {
+        .species-content {
             padding: 1.5rem;
         }
 
-        .initiative-content h3 {
+        .species-content h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
 
-        .initiative-content p {
+        .species-content p {
             margin-bottom: 1.5rem;
         }
 
@@ -427,7 +427,7 @@
                 grid-template-columns: 1fr;
             }
             
-            .initiatives-grid {
+            .species-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
             
@@ -475,7 +475,7 @@
                 display: block;
             }
             
-            .initiatives-grid {
+            .species-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -487,11 +487,6 @@
                 grid-template-columns: 1fr;
             }
         }
-
-        /* Animation for stats counter */
-        .counter {
-            transition: all 0.5s ease;
-        }
     </style>
 </head>
 <body>
@@ -499,19 +494,19 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
+                <i class="fas fa-paw"></i>
+                <span>WildGuard</span>
             </div>
             <nav>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#species">濒危物种</a></li>
+                    <li><a href="#get-involved">参与保护</a></li>
+                    <li><a href="#contact">联系我们</a></li>
                 </ul>
             </nav>
         </div>
@@ -520,9 +515,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>守护野生动物，保护地球家园</h1>
+            <p>加入全球野生动物保护行动，为濒危物种创造更美好的未来。</p>
+            <a href="#get-involved" class="btn">立即行动</a>
         </div>
     </section>
 
@@ -530,82 +525,82 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>关于WildGuard</h2>
+                <p>我们致力于保护全球野生动物及其栖息地，通过科学研究和社区参与推动保护工作。</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1550358864-518f202c02ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="野生动物保护">
                 </div>
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h3>我们的使命</h3>
+                    <p>WildGuard成立于2008年，是一个国际性的非营利组织，专注于保护全球濒危野生动物及其栖息地。</p>
+                    <p>我们通过与当地社区、政府和科研机构合作，实施有效的保护策略，减少对野生动物的威胁。</p>
+                    <p>我们的工作包括反盗猎巡逻、栖息地恢复、社区教育和政策倡导等多个方面。</p>
+                    <a href="#" class="btn">了解更多</a>
                 </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
-                    <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>150+</h3>
+                    <p>保护项目</p>
                 </div>
                 <div class="stat-item">
                     <i class="fas fa-globe-americas"></i>
-                    <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
+                    <h3>40+</h3>
+                    <p>国家覆盖</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                    <i class="fas fa-hand-holding-heart"></i>
+                    <h3>25,000+</h3>
+                    <p>志愿者</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-tree"></i>
+                    <h3>500,000+</h3>
+                    <p>英亩保护区</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Initiatives Section -->
-    <section class="initiatives" id="initiatives">
+    <!-- Species Section -->
+    <section class="species" id="species">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>濒危物种保护</h2>
+                <p>我们专注于保护这些关键物种，它们对生态系统的健康至关重要。</p>
             </div>
-            <div class="initiatives-grid">
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+            <div class="species-grid">
+                <div class="species-card">
+                    <div class="species-img">
+                        <img src="https://images.unsplash.com/photo-1548767797-d8c11a2b3f18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="老虎">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
-                    </div>
-                    <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="species-content">
+                        <h3>老虎</h3>
+                        <p>全球野生老虎数量不足4,000只。我们通过反盗猎和栖息地保护项目帮助老虎种群恢复。</p>
+                        <a href="#" class="btn">了解详情</a>
                     </div>
                 </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                <div class="species-card">
+                    <div class="species-img">
+                        <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2032&q=80" alt="大象">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="species-content">
+                        <h3>非洲象</h3>
+                        <p>每年有约20,000头大象因象牙被盗猎。我们致力于终止象牙贸易，保护这些智慧生物。</p>
+                        <a href="#" class="btn">了解详情</a>
+                    </div>
+                </div>
+                <div class="species-card">
+                    <div class="species-img">
+                        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="犀牛">
+                    </div>
+                    <div class="species-content">
+                        <h3>犀牛</h3>
+                        <p>犀牛角非法贸易导致犀牛数量急剧下降。我们通过加强保护和社区教育来拯救犀牛。</p>
+                        <a href="#" class="btn">了解详情</a>
                     </div>
                 </div>
             </div>
@@ -615,9 +610,9 @@
     <!-- CTA Section -->
     <section class="cta" id="get-involved">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <h2>加入保护行动</h2>
+            <p>您的支持可以帮助我们保护濒危物种，维护生物多样性，为后代留下丰富的自然遗产。</p>
+            <a href="#" class="btn">成为志愿者</a>
         </div>
     </section>
 
@@ -626,44 +621,44 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>WildGuard</h3>
+                    <p>致力于保护全球野生动物及其栖息地的国际组织。</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>快速链接</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#species">濒危物种</a></li>
+                        <li><a href="#get-involved">参与保护</a></li>
+                        <li><a href="#contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>保护项目</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
-                        <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
+                        <li><a href="#">反盗猎行动</a></li>
+                        <li><a href="#">栖息地恢复</a></li>
+                        <li><a href="#">社区教育</a></li>
+                        <li><a href="#">科研监测</a></li>
+                        <li><a href="#">政策倡导</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 自然保护大道123号，北京</p>
+                    <p><i class="fas fa-phone"></i> +86 10 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> contact@wildguard.org</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2023 WildGuard. 保留所有权利。</p>
             </div>
         </div>
     </footer>
@@ -673,29 +668,6 @@
         document.querySelector('.mobile-menu').addEventListener('click', function() {
             document.querySelector('nav ul').classList.toggle('active');
         });
-
-        // Counter Animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.counter');
-            const speed = 200; // The lower the slower
-            
-            counters.forEach(counter => {
-                const target = +counter.getAttribute('data-target');
-                const count = +counter.innerText;
-                
-                const inc = target / speed;
-                
-                if(count < target) {
-                    counter.innerText = Math.ceil(count + inc);
-                    setTimeout(animateCounters, 1);
-                } else {
-                    counter.innerText = target;
-                }
-            });
-        }
-
-        // Initialize counters when page loads
-        window.addEventListener('load', animateCounters);
 
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -718,5 +690,4 @@
         });
     </script>
 </body>
-
 </html>
